@@ -1,0 +1,43 @@
+public class MyArray{
+	private int anyNumber;
+
+	public int getAnyNumber(){
+		return anyNumber;
+	}
+
+	public void setAnyNumber(int anyNumber){
+		if(anyNumber % 2 != 0){
+		this.anyNumber = anyNumber;
+	}else{
+		System.out.print("Число должно быть нечётным.");
+	}
+}
+	
+	public int[][] arrays = new int[anyNumber][anyNumber];
+	
+public int[][] PRArray(int[][] someArray){
+	for(int i = 0; i < someArray.length; i++){
+		for(int j = 0; j < someArray.length; j++){
+			someArray[i][j] = (int)(Math.random() * 15);
+				}
+		}
+return someArray;
+}
+
+
+	public void printArray(int [][] someArray){
+		for(int i = 0; i < someArray.length; i++){
+			for(int j = 0; j < someArray[i].length; j++){
+				if(j == 0){
+					System.out.print("[ ");
+				     }
+					if(j < someArray[i].length - 1){
+						System.out.printf("%2s, ", someArray[i][j]);
+					}else {
+							System.out.printf("%2s ]", someArray[i][j]);
+						}
+			}
+			System.out.println();
+		}
+	}
+}

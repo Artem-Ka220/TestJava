@@ -1,0 +1,31 @@
+public class BottlesOfBeers{
+	public static void main(String[] args){
+		int bottlesOfBeer = 99;
+		String bottleOfBeerOne = " бутылок пива на стене,";
+		String bottleOfBeerTwo = " бутылок пива!";
+
+		String bottleOfBeerThree = " бутылки пива на стене,";
+		String bottleOfBeerFour = " бутылки пива!";
+	while(bottlesOfBeer > 0){
+		if(bottlesOfBeer % 10 == 1 || bottlesOfBeer == 1){
+			System.out.println(bottlesOfBeer + " бутылка пива на стене!");
+			System.out.println("Возьми одну, пусти по кругу,");
+		}
+		
+		else if(bottlesOfBeer % 10 == 2 || bottlesOfBeer % 10 == 3 || bottlesOfBeer % 10 == 4 || bottlesOfBeer == 11){
+			System.out.println(bottlesOfBeer + bottleOfBeerThree);
+			System.out.println(bottlesOfBeer + bottleOfBeerFour);
+			System.out.println("Возьми одну, пусти по кругу,");
+		}else{
+			System.out.println(bottlesOfBeer + bottleOfBeerOne);
+			System.out.println(bottlesOfBeer + bottleOfBeerTwo);
+			System.out.println("Возьми одну, пусти по кругу,");
+		}
+			bottlesOfBeer--;
+		}
+		
+	System.out.println();
+	System.out.println("Нет бутылок пива на стене!");
+	System.out.println("Нет бутылок пива на стене! Пойди в магазин и купи ещё!");
+	}
+}

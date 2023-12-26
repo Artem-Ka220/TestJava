@@ -1,0 +1,25 @@
+public class PhraseOMatic{
+	public static void main(String[] args){
+	String[] wordListOne = {"круглосуточный", "трех-звенный", "30000-футовый", "взаимный", "обоюдный выигрыш", "фронтэнд","на основе веб-технологий", "проникающий", "умный", "шесть сигм", "метод критического пути", "динамичный"};
+	String[] wordListTwo = {"уполномоченный", "трудный", "чистый продукт", "ориентированный", "центральный", "распределенный", "кластеризованный", "фирменный", "нестандартный ум", "позиционированный", "сетевой", "сфокусированный", "использованный с выгодой", "выровненный", "нацеленный на", "общий", "совместный", "ускоренный"};
+	String[] wordListThree = {"процесс", "пункт разгрузки", "выход из положения", "тип структуры", "талант", "подход", "уровень завоеванного внимания", "портал", "период времени", "обзор", "образец", "пункт следования"};
+
+int oneLength = wordListOne.length;
+System.out.println(oneLength);
+int twoLength = wordListTwo.length;
+System.out.println(twoLength);
+int threeLength = wordListThree.length;
+System.out.println(threeLength);
+
+int rand1 = (int)(Math.random() * oneLength);
+System.out.println(rand1);
+int rand2 = (int)(Math.random() * twoLength);
+System.out.println(rand2);
+int rand3 = (int)(Math.random() * threeLength);
+System.out.println(rand3);
+
+String phrase = wordListOne[rand1] + " " + wordListTwo[rand2] + " " + wordListThree[rand3];
+
+System.out.println("Все, что нам нужно это - " + phrase);
+		} 
+	}

@@ -1,0 +1,8 @@
+class TestDogsDrive{
+	public static void main(String[] args){
+		Dogs dog = new Dogs();
+		dog.size = 70;
+
+		dog.bark();
+		}
+	}

@@ -1,0 +1,6 @@
+public class GameLauncher{
+	public static void main(){
+		GuessGame game = new GuessGame();
+		game.startGame();
+	}
+}

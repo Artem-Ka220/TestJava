@@ -1,0 +1,7 @@
+class Cat{
+	int size;
+	String name;
+	void name(){
+		System.out.print("Мяу! Мяу! Мяу!");
+	}
+}

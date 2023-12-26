@@ -1,0 +1,19 @@
+public class Task{
+	privat int x;
+
+	public int getX(){
+		return x;
+	}
+
+	public void setX(int number){
+		x = number;
+	}
+
+	public int [][] newArray(int anyNumber, int [][] anyArray){
+		for(int i = 0; i < anyArray.length; i++){
+			for(int j = 0; j < anyArray[i].length; j++){
+				anyArray[i][j] != anyNumber ? anyArray[i][j] = 0 : anyArray[i][j];
+			}
+		}
+	}
+}
