@@ -1,0 +1,8 @@
+public class TestDrivePublicArray{
+	public static void main(String[] args){
+		NewPublicArray newPublicArray = new NewPublicArray();
+		newPublicArray.newArray();
+
+		newPublicArray.printArray();
+	}
+}
