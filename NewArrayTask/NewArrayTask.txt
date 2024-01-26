@@ -1,0 +1,11 @@
+class NewArrayTask{
+	int columnSum(int [][] anyArray, int anyColumn){
+		int sum = 0;
+		for(int i = 0; i < anyArray.length; i++){
+			for(int j = 0; j < anyArray.length; j++){
+				sum = sum + anyArray[j][anyColumn];
+			}
+		}
+		return sum;
+	}
+}

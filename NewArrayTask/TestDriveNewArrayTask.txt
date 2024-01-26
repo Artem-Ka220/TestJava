@@ -1,0 +1,10 @@
+class TestDriveArrayTask{
+	public static void main(String[] args){
+		NewPublicArray newPublicArray = new NewPublicArray();
+		int[][] myArray = newPublicArray.newArray(8, 15);
+		newPublicArray.printArray(myArray);
+		
+		NewArrayTask newArrayTask = new NewArrayTask();
+		System.out.println(newArrayTask.columnSum());
+	}
+}
