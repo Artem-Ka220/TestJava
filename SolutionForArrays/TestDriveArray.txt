@@ -1,0 +1,7 @@
+class TestDriveArray{
+	public static void main(String[] args){
+		Array array = new Array();
+		int [][] myArray = array.createArray(15, 18);
+		array.printArray(myArray);
+	}
+}
