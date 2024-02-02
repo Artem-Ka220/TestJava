@@ -1,0 +1,26 @@
+class Solution{
+	int[][] createArray(int height, int weidth){
+		int [][] newArray = new int[height][weidth];
+			for(int i = 0; i < newArray.length; i++){
+				for(int j = 0; j < neweArray[i].length; j++){
+					newArray[i][j] = (int)(Math.random()*2000);
+			}
+		}
+		return newArray;
+	}
+	void printArray(int [][] anyArray){
+		for(int i = 0; i < anyArray.length; i++){
+			for(int j = 0; j < anyArray[j].length; j++){
+				if(j == 0){
+					System.out.print("[ ");
+				}
+				if(j < anyArray[i].length - 1){
+					System.out.printf("%3s, ", anyArray[i][j]);
+				}
+				else{
+					System.out.printf("%3s ]", anyArray[i][j]);
+				}
+			}
+		}
+	}
+}
