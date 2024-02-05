@@ -1,0 +1,7 @@
+class TestDriveNewArrayCode{
+	public static void main(String[] args){
+		NewArrayCode newArrayCode = new NewArrayCode();
+			int [][] myArray = newArrayCode.createNewArray();
+				newArrayCode.printNewArray(newArrayCode);
+	}
+}
