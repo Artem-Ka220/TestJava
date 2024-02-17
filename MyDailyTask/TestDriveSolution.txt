@@ -1,0 +1,7 @@
+class TestDriveSolution{
+	public static void main(String[] args){
+		Solution solution = new Solution();
+			int [][]myNewArray = solution.newArray(5,8);
+				solution.printArray(myNewArray);
+	}
+}
