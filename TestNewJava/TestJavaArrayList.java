@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+class Solution{
+	public static void main(String[] args){
+		        ArrayList<Integer> arrayList = new ArrayList<>();
+        				for (int i = 0; i < arrayList.size(); i++) {
+           					 arrayList.addLast(i);
+        		}
+	System.out.println(arrayList);
+	}
+}
