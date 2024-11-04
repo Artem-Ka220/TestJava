@@ -1,0 +1,3 @@
+class Hippo extends Animal{
+	System.out.println("Создание Hippo.");
+}

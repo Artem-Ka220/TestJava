@@ -1,0 +1,7 @@
+import java.util.Arrays;
+
+public class QuickSort{
+	public static void main(String[] args){
+		int[] array = new int[]{64, 42, 85, 74, 63, 12, 56, -15, -85, 0, 71, 23, 32, 12, 45, -89};
+	}
+}
