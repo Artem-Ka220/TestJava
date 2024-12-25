@@ -1,0 +1,5 @@
+public class Format{
+	public static void main(String[]args){
+		System.out.printf("%,6.1f",42.000);
+	}
+}

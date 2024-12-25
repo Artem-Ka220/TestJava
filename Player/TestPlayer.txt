@@ -1,0 +1,9 @@
+public class TestPlayer{
+	public static void main(String[] args){
+		System.out.println(Player.playerCount);
+		Player player = new Player();
+		System.out.println(Player.playerCount);
+		Player playerOne = new Player();
+		System.out.println(Player.playerCount);
+	}
+}

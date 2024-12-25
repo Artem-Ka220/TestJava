@@ -1,0 +1,16 @@
+class TestBox{
+	Integer i;
+	int i;
+
+public static void main(String [] args){
+	TestBox testBox = new TestBox();
+	testBox.go();
+	}
+
+public void go(){
+	j = i;
+	System.out.println(j);
+	System.out.println(i);
+
+	}
+}
