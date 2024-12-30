@@ -1,0 +1,12 @@
+import java.util.Calendar;
+import static java.lang.System.out;
+
+class NewCalendar{
+	public static void main(String[] args){
+		Calendar calendar = new Calendar();
+		out.println(calendar.getTime());
+
+		Calendar newCalendar = new GrigorianCalendar();
+		out.println(newCalendar);
+	}
+}
