@@ -1,13 +1,13 @@
 class TestExceptions{
 	public static void main(String[] args){
-		String test  = "Нет";
+		String test  = "Да";
 
 		try{
 			System.out.println("Начало try");
 			doRisky(test);
 			System.out.println("Конец try");
 		}catch(ScaryException se) {
-			se.getMessage();
+			se.getNewMessage();
 		}finally{
 			System.out.println("finaly");
 		}
@@ -16,14 +16,14 @@ class TestExceptions{
 static void doRisky(String test) throws ScaryException{
 		System.out.println("Начало опасного метода...");
 		if("Да".equals(test)){
-			ScaryException.getNewMessage();
+			throw new ScaryException();
 		}
 		System.out.println("Конец опасного метода.");
 		return;
 	}
 static class ScaryException extends Exception{
-	static void getNewMessage(){
-			System.out.println("Жуткое исключение!");
-		}
-	}
+        static void getNewMessage(){
+                        System.out.println("Жуткое исключение,!");
+                }
+        }
 }

@@ -1,6 +1,6 @@
 class TestExceptions{
 	public static void main(String[] args){
-		String test  = "Нет";
+		String test  = "Да";
 
 		try{
 			System.out.println("Начало try");
@@ -21,4 +21,9 @@ test void doRisky(String test) throws ScaryException{
 		System.out.println("Конец опасного метода.");
 		return;
 	}
+static class ScaryException extends Exception{
+        static void getNewMessage(){
+                        System.out.println("Жуткое исключение!");
+                }
+        }
 }
