@@ -1,0 +1,51 @@
+public class Main{
+	public static void main(String[] args){
+		
+	}
+public static class Laundry throws ClothingException{
+		public static void doWashing(String clothes){
+			if("Нет".equals(clothes)){
+				
+		}
+	}	
+}
+public static class ClothingException extends Exceptions{
+		public static void newGetMessage(String clothes){
+			System.out.println("Стирать-то и нечего(: (: (:!!!");
+		}
+	}
+
+public static class PantsException extends ClothingException{
+	@Override
+	public static void newGetMessage(String clothes){
+			System.out.println("Режим не соответсвует выбранной одежде!!!");
+		}
+	}
+
+public static class LingerieException extends ClothingException{
+	@Override
+	public static void newGetMessage(String clothes){
+			System.out.println("Установите соответствующий режим!!!");
+		}
+	}
+
+public static class ShirtException extends ClothingException{
+	@Override
+	public static void newGetMessage(String clothes){
+			System.out.println("Поменяйте режим!!!");
+		}
+	}
+
+public static class TeeShirtException extends ShirtException{
+	@Override
+	public static void newGetMessage(String clothes){
+			System.out.println("Выберите мягкий режим!!!");
+		}
+	}
+public static class DressShirtException extends ShirtException{
+	@Override
+	public static void newGetMessage(String clothes){
+			System.out.println("Нужен ещё мягче режим!!!");
+		}
+	}
+}
