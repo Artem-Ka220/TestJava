@@ -1,0 +1,16 @@
+import javax.swing.*;
+
+class NewJFrame(){
+	public static void main(String[] args){
+		JFrame frame = new JFrame();
+
+		Button button = new Button("Click me");
+
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSET);
+
+		frame.getContent().add(button);
+
+		frame.size(300, 300);
+		frame.setVisible();
+	}
+}
