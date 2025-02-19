@@ -9,6 +9,7 @@ class NewJFrame(){
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSET);
 
 		frame.getContent().add(button);
+		frame.getBackground(Color.BLUE);
 
 		frame.size(300, 300);
 		frame.setVisible();
